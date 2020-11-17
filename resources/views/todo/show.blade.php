@@ -13,14 +13,14 @@
                     {{$todo->description}}
 
 <div class="mt-3 text-right">
-    <a class="btn btn-success" href="/todos/{{$todo->id}}/edit">Edit</a>
-    <a href="/todos/{{$todo->id}}/delete" class="btn btn-danger">Delete</a>
+    <a class="btn btn-success" href="/todo/{{$todo->id}}/edit">Edit</a>
+    <a href="/todo/{{$todo->id}}/delete" class="btn btn-danger">Delete</a>
 </div>
-    
+
                 </div>
-                
+
             </div>
-        
+
         </div>
     </div>
 
