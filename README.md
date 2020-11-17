@@ -1,3 +1,6 @@
+This is a simple Laravel 7 Project. You can learn laravel basic CRUD here and also REst API. Its follows standard way to CRUD in Laravel Framework.
+This repo only for entry level laravel lerners.
+
 ## Installation
 Install dependencies via composer
 ```ssh
