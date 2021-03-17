@@ -159,24 +159,4 @@ class TodoController extends Controller
         return redirect()->back()->with($alert, $message);
     }
 
-    public function markCompleted($todo)
-    {
-        // MODIFY MODEL
-        $todo->completed = true;
-
-        // UPDATE MODEL
-        $save = $todo->save();
-
-         // SET ALERT MESSAGE
-         if ($save) {
-            $alert = 'success';
-            $message = 'Todo Mark as Completed Successfully';
-        } else {
-            $alert = 'error';
-            $message = 'Something Went Wrong';
-        }
-
-        // REDIRECT BACK VIEW WITH ALERT MESSAGE
-        return redirect()->back()->with($alert, $message);
-    }
 }
