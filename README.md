@@ -27,3 +27,6 @@ Migrate Database
 ```ssh
 php artisan migrate:fresh --seed
 ```
+
+do more, less code.
+Done! Happy Coding...
