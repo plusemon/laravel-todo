@@ -55,7 +55,7 @@ class TodoController extends Controller
         }
 
         // REDIRECT TO INDEX WITH ALERT MESSAGE
-        return redirect(route('todo.index'))->with($alert, $message);
+        return redirect()->route('todo.index')->with($alert, $message);
     }
 
 
@@ -95,7 +95,7 @@ class TodoController extends Controller
         }
 
         // REDIRECT TO INDEX VIEW WITH ALERT MESSAGE
-        return redirect(route('todo.index'))->with($alert, $message);
+        return redirect()->route('todo.index')->with($alert, $message);
     }
 
     public function destroy(Todo $todo)
@@ -113,7 +113,7 @@ class TodoController extends Controller
         }
 
         // REDIRECT BACK WITH ALERT MESSAGE
-        return redirect()->back()->with($alert, $message);
+        return back()->with($alert, $message);
     }
 
     public function completed(Todo $todo)
@@ -135,7 +135,7 @@ class TodoController extends Controller
         }
 
         // REDIRECT BACK VIEW WITH ALERT MESSAGE
-        return redirect()->back()->with($alert, $message);
+        return back()->with($alert, $message);
     }
 
     public function restore(Todo $todo)
@@ -156,7 +156,7 @@ class TodoController extends Controller
         }
 
         // REDIRECT BACK VIEW WITH ALERT MESSAGE
-        return redirect()->back()->with($alert, $message);
+        return back()->with($alert, $message);
     }
 
 }
