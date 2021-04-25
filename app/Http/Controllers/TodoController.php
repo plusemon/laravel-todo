@@ -9,23 +9,18 @@ class TodoController extends Controller
 {
     public function index()
     {
-        // GET ALL MODEL
-        $todo = Todo::all();
-
-        // RETURN TO INDEX VIEW WITH MODEL COLLECTION
+        $todos = Todo::all();
         return view('todo.index', compact('todo'));
     }
 
 
     public function show(Todo $todo)
     {
-        // RETURN TO SHOW VIEW
         return view('todo.show');
     }
 
     public function create()
     {
-        // RETURN TO CREATE VIEW
         return view('todo.create');
     }
 
@@ -54,14 +49,12 @@ class TodoController extends Controller
             $message = 'Something Went Wrong';
         }
 
-        // REDIRECT TO INDEX WITH ALERT MESSAGE
         return redirect()->route('todo.index')->with($alert, $message);
     }
 
 
     public function edit(Todo $todo)
     {
-        // RETURN TO EDIT VIEW WITH MODEL
         return view('todo.edit', compact('todo'));
     }
 
