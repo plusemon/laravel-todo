@@ -8,7 +8,7 @@ composer install
 ```
 Update dependencies (Optional)
 ```ssh
-composer install
+composer update
 ```
 Copy .env.example file to new .env file
 ```ssh
